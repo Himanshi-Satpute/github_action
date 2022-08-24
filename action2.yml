@@ -1,0 +1,11 @@
+name: action2
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  print_hello:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello World!"
